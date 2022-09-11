@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0hL-x9-LCn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="toViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="PatikaOdev1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="toViewController" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-KG-hDp">
+                                <rect key="frame" x="58" y="129" width="298" height="338"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="338" id="GGy-Ru-UNl"/>
+                                    <constraint firstAttribute="width" constant="298" id="RXI-TN-gBo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzZ-5G-nss">
+                                <rect key="frame" x="129" y="429" width="156" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2.Sayfaya Geç">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSecondView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgg-Or-Tz6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rmU-KG-hDp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07x-ya-nGB"/>
+                            <constraint firstItem="HzZ-5G-nss" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pbp-BF-xdh"/>
+                            <constraint firstItem="HzZ-5G-nss" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k5R-i0-CF1"/>
+                            <constraint firstItem="rmU-KG-hDp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="qU2-Do-Umb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zWC-qX-dM6"/>
+                    <connections>
+                        <outlet property="lbl" destination="rmU-KG-hDp" id="Nq3-Mc-1Wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="68.973214285714278"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zwp-L5-Oco">
+            <objects>
+                <viewController storyboardIdentifier="toSecondViewController" id="UGG-rU-4ib" customClass="SecondViewController" customModule="PatikaOdev1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondViewController" id="nUx-UJ-nUa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wN4-Ar-2Lp">
+                                <rect key="frame" x="20" y="205" width="374" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="6aV-mV-1kH"/>
+                                    <constraint firstAttribute="width" constant="374" id="g1C-md-oDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11G-NC-azs">
+                                <rect key="frame" x="161.5" y="435" width="91" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveBtn:" destination="UGG-rU-4ib" eventType="touchUpInside" id="ezB-ha-wc9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dxy-xz-wsw"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="11G-NC-azs" firstAttribute="top" secondItem="wN4-Ar-2Lp" secondAttribute="bottom" constant="90" id="21q-K1-2K0"/>
+                            <constraint firstItem="wN4-Ar-2Lp" firstAttribute="centerX" secondItem="nUx-UJ-nUa" secondAttribute="centerX" id="83M-5B-vSx"/>
+                            <constraint firstItem="wN4-Ar-2Lp" firstAttribute="top" secondItem="Dxy-xz-wsw" secondAttribute="top" constant="161" id="PhP-Ab-UYs"/>
+                            <constraint firstItem="11G-NC-azs" firstAttribute="centerX" secondItem="nUx-UJ-nUa" secondAttribute="centerX" id="eGI-jI-Jie"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UVQ-37-s65"/>
+                    <connections>
+                        <outlet property="tf" destination="wN4-Ar-2Lp" id="Req-jk-yrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prI-UI-LHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740.5797101449277" y="68.973214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Euz-DH-wlY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0hL-x9-LCn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9bN-IP-G6L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4TI-a8-8A9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVf-we-n5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
